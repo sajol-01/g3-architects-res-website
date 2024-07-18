@@ -41,6 +41,7 @@
 .nav-bar {
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 100px;
 }
 .brand-title {
   font-size: 3rem;
@@ -83,9 +84,207 @@
 .banner-image {
   width: 100%;
 }
+/* Response for Banner */
 @media screen and (max-width: 576px) {
   .nav-bar,
   .nav-links {
     flex-direction: column;
   }
+}
+/* MAIN STYLES */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.team {
+  align-items: center;
+  gap: 50px;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  gap: 25px;
+  width: 100%;
+  border-radius: 10px;
+}
+.features {
+  max-width: 550px;
+}
+.feature-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+#quick-list {
+  color: rgb(114, 114, 114);
+}
+#of-our {
+  color: rgb(19, 19, 19);
+}
+#fetures {
+  color: rgb(255, 144, 14);
+}
+.feature-description {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+/* responsive of main */
+@media screen and (max-width: 576px) {
+  .team {
+    flex-direction: column;
+  }
+  .img-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-left: 50px;
+  }
+  .features {
+    margin-left: 20px;
+    text-align: center;
+  }
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .team {
+    flex-direction: column;
+  }
+  .features {
+    margin-left: 50px;
+  }
+}
+/* Section you will enjoy */
+.enjoy-feature {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+.enjoy-feature-title {
+  font-size: 45px;
+  font-weight: 700;
+  max-width: 450px;
+}
+.enjoy-feature-description {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 580px;
+}
+.enjoy-1 {
+  border-radius: 8px;
+
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+
+.enjoy-1-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.enjoy-1-description {
+  font-size: 16px;
+  font-weight: 400;
+}
+.enjoy-2 {
+  border-radius: 8px;
+
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+
+.enjoy-2-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.enjoy-2-description {
+  font-size: 16px;
+  font-weight: 400;
+}
+.enjoy-3 {
+  border-radius: 8px;
+
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+
+.enjoy-3-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.enjoy-3-description {
+  font-size: 16px;
+  font-weight: 400;
+}
+.enjoy-4 {
+  border-radius: 8px;
+
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+
+.enjoy-4-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.enjoy-4-description {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-image {
+  padding: 0px 0px 200px 92px;
+ height: 500px;
+}
+
+/* Some Facts Styles */
+.some-facts{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.fact-title{
+  font-size: 45px;
+  font-weight: 700;
+}
+.fact-deccription{
+  font-size: 16px;
+  font-weight: 400;
+  width: 500px;
+}
+.facts-container{
+
+}
+
+/* Cards */
+.fact{
+  width: 240px;
+  max-height: 240px;
+  border: 1px solid rgb(255, 144, 14);
+border-radius: 8px;
+text-align: center;
+align-items: center;
+padding-top: 50px;
+padding-bottom: 70px;
+padding-right: 20px;
+padding-left: 20px;
+
+
+
+}
+
+.fact-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+
+}
+.fact-number{
+  font-size: 2.8rem;
+font-weight: 600;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.fact-name{
+  font-size: 20px;
+font-weight: 600;
+margin-top: 5px;
+margin-bottom: 5px;
 }
