@@ -129,12 +129,12 @@ main {
   padding: 10px;
   margin-bottom: 50px;
 }
-/* responsive of main */
+/* responsive of main || small device*/
 @media screen and (max-width: 576px) {
   .team {
     flex-direction: column;
   }
-  .img-container {
+  .img-container{
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
     margin-left: 50px;
@@ -146,23 +146,28 @@ main {
 }
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .team {
+  .team,
+  .fact-cards {
     flex-direction: column;
   }
   .features {
     margin-left: 50px;
   }
+  
 }
 /* Section you will enjoy */
 .enjoy-feature {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  gap:  40px;
 }
 .enjoy-feature-title {
   font-size: 45px;
   font-weight: 700;
   max-width: 450px;
+  border-left: 5px solid rgb(255, 144, 14);
+  padding: 20px;
 }
 .enjoy-feature-description {
   font-size: 16px;
@@ -229,7 +234,18 @@ main {
   font-size: 16px;
   font-weight: 400;
 }
-
+#experience-badge{
+  padding: 45px 42px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year{
+  font-size: 4rem;
+}
+#experiece-name{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
 .section-image {
   padding: 0px 0px 200px 92px;
  height: 500px;
@@ -239,6 +255,7 @@ main {
 .some-facts{
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 .fact-title{
   font-size: 45px;
@@ -287,4 +304,51 @@ margin-bottom: 5px;
 font-weight: 600;
 margin-top: 5px;
 margin-bottom: 5px;
+}
+/* SPONSORS */
+.sponsor-title{
+  font-size: 45px;
+font-weight: 700;
+}
+.sponsor-description{
+  font-size: 16px;
+font-weight: 400;
+}
+.sponsor{
+  text-align: center;
+  align-items: center; 
+}
+
+.our-sponsors{
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+
+}
+.sponsor-img{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.sponsor-img img{
+  filter: grayscale(100%);
+}
+@media screen and (max-width: 576px){
+  .sponsor-img,
+  .fact-cards{
+    grid-template-columns: repeat(1,1fr);
+    gap: 50px;
+justify-items: center;
+justify-content: center;
+  }
+}
+/* FOOTER */
+.footer-title{
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+
+background: rgb(255, 244, 231);
+max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 400px;
 }
